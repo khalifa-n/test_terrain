@@ -20,16 +20,81 @@ body
     height: 500px;
     width: 1000px;
 }
-.stadium{
+.stadium
+{
     display: flex;
     height: 450px;
     width: 950px;
     align-items: center;
     justify-content: center;
     border:2px solid white ;
+    position: absolute;
 
 }
-.central-round{
+.test{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    margin-top: 100px;
+}
+                /* ###################################RIGHT-SIDE###################################### */
+               
+.right-side
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 420px;
+    transform: rotate(180deg);}
+.penalty-spot-right
+{
+    height: 100px;
+    width: 50px;
+    border-radius: 0px 100px 100px 0px;   
+    border-top:  2px solid white;
+    border-right:  2px solid white;
+    border-bottom:  2px solid white;
+}
+.surface-to-repair-right
+{
+    display: flex;
+    align-items: center;
+    height: 170px;
+    width: 130px;
+    border-top:  2px solid white;
+    border-right:  2px solid white;
+    border-bottom:  2px solid white;
+
+}
+.field-poles-right
+{
+    height: 100px;
+    width: 60px;
+    border-top:  2px solid white;
+    border-right:  2px solid white;
+    border-bottom:  2px solid white;
+}
+.point
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    margin-left: 27px;
+    border-radius: 50%;
+   
+
+}
+                /* ###################################END-RIGHT-SIDE###################################### */
+
+                /* ###################################MIDDLE###################################### */
+
+.central-round
+{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,13 +120,124 @@ body
     height: 450px;
     width: 2px;
 }
-.goal_posts
+                /* ###################################END-MIDDLE###################################### */
+
+                /* ###################################LEFT-SIDE###################################### */
+
+.left-side
 {
     display: flex;
-    float: left;
-    height: 100px;
-    width: 100px;
-    border-right:2px solid red;
-    border-bottom:2px solid red ;
-    border-top:2px solid red ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    width: 420px;
 }
+.penalty-spot-left
+{
+    height: 100px;
+    width: 50px;
+    border-radius: 0px 100px 100px 0px;   
+    border-top:  2px solid white;
+    border-right:  2px solid white;
+    border-bottom:  2px solid white;
+}
+.surface-to-repair-left
+{
+    display: flex;
+    align-items: center;
+    height: 170px;
+    width: 130px;
+    border-top:  2px solid white;
+    border-right:  2px solid white;
+    border-bottom:  2px solid white;
+
+}
+.field-poles-left
+{
+    height: 100px;
+    width: 60px;
+    border-top:  2px solid white;
+    border-right:  2px solid white;
+    border-bottom:  2px solid white;
+}
+.point
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8px;
+    width: 8px;
+    background-color: white;
+    margin-left: 27px;
+    border-radius: 50%;
+}
+.corner-container-right{
+    height: 50px;
+    width: 420px;
+}
+.container-field-poles{
+    height: 350px;
+    width: 420px;
+    display: flex;
+    align-items: center;
+}
+.corner-container-left{
+    height: 50px;
+    width: 420px;
+}
+.corner-left{
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 0px 310px 0px; 
+    border:2px solid white ;
+  
+}
+.corner-right{
+    width: 50px;
+    height: 50px;
+    border-radius: 0px 310px 0px 0px; 
+    border:2px solid white ;
+  
+}
+
+                /* ###################################END-LEFT-SIDE###################################### */
+                .loader{
+                   display: flex;
+                   position: fixed;
+                   bottom: 50px;
+                   transition: opacity 0.7s ease-in;
+               }
+                .circle{
+                    background-color: rgb(180, 21, 21);
+                    height: 10px;
+                    width: 10px;
+                    margin: 5px;
+                    border-radius: 50%;
+                    animation: bouger 0.5s ease-in infinite;
+                }
+                .circle:nth-of-type(1){
+                    animation-delay: 0.1s;
+                    
+                }
+                .circle:nth-of-type(2){
+                    animation-delay: 0.2s;
+                    
+                }
+                .circle:nth-of-type(3){
+                    animation-delay: 0.3s;
+                    
+                }
+                
+                @keyframes bouger{
+                    0%,10%{
+                        transform: translateY(0);
+                       
+                    }
+                    50%{
+                        transform: translateY(-10px);
+                
+                    }
+                    
+                    
+                }
