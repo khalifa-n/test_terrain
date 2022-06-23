@@ -27,16 +27,11 @@ body
     width: 950px;
     align-items: center;
     justify-content: center;
-    border:2px solid white ;
+    border:3px solid white ;
     position: absolute;
 
 }
-.test{
-    height: 50px;
-    width: 50px;
-    background-color: black;
-    margin-top: 100px;
-}
+
                 /* ###################################RIGHT-SIDE###################################### */
                
 .right-side
@@ -209,10 +204,12 @@ body
                    transition: opacity 0.7s ease-in;
                }
                 .circle{
-                    background-color: rgb(180, 21, 21);
-                    height: 10px;
-                    width: 10px;
-                    margin: 5px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 20px;
+                    width: 20px;
+                    margin: 10px;
                     border-radius: 50%;
                     animation: bouger 0.5s ease-in infinite;
                 }
@@ -231,12 +228,20 @@ body
                 
                 @keyframes bouger{
                     0%,10%{
-                        transform: translateY(0);
+                        transform: translateY(10px);
                        
                     }
-                    50%{
-                        transform: translateY(-10px);
+                    10%,20%{
+                        transform: translateY(20px);
                 
+                    }
+                    20%,30%{
+                        transform: translateY(30px);
+
+                    }
+                    30%,40%{
+                        transform: translateY(40px);
+
                     }
                     
                     
